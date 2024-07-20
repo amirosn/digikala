@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digikala first page</title>
+</head>
+<body>
+    <div class="top-ad-container"><img src="./images/topAd.webp" alt="top-ad"></div>
+    <div class="header-container">   
+        <header class="search-bar">
+            <i class="material-icons header-icon" id="searchIcon">search</i>
+            <img src="./images/digi.svg" alt="دیجی کالا" id="digi">
+            <img src="./images/logo1050.svg" alt="1050logo" id="digi1050">
+            <input type="search" id="search-bar" placeholder="جستجو در "></input>
+            <input type="search" id="search-bar2" placeholder="جستجو "></input>
+            <div class="top-icons">
+                <span class="shop"><a href="#"><i class="material-icons" id="shop">shopping_cart</i></a></span>
+                <span class="login">
+                    <button id="login">ورود &#124; ثبت نام <span class="material-symbols-outlined" id="login-icon">login</span></button>
+                </span>
+            </div>  
+        </header>
+    </div>
+    <div class="slide-container">
+        <div class="slides fade">
+            <img src="./images/1.webp" alt="image">
+        </div>
+        <div class="slides fade">
+            <img src="./images/2.webp" alt="image">
+        </div>
+        <div class="slides fade">
+            <img src="./images/3.webp" alt="image">
+        </div>
+        <div class="slides fade">
+            <img src="./images/6.webp" alt="image">
+        </div>
+        
+        <div class="prev-container" onclick="plusSlides(-1)"><a href="#" class="prev">&#10094</a></div>
+        <div class="next-container" onclick="plusSlides(1)"><a href="#" class="next">&#10095</a></div>
+        
+    
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+
+    <div class="widget-container">
+        <a href="#" class="wgt"><img src="./images/w1.png" alt="دیجی کالا جت"><span class="w-text">دیجی کالا جت</span></a>
+        <a href="#" class="wgt"><img src="./images/w2.png" alt="دیجی پی"><span class="w-text">دیجی پی</span></a>
+        <a href="#" class="wgt"><img src="./images/w3.png" alt="تولد استایل"><span class="w-text">تولد استایل</span></a>
+        <a href="#" class="wgt"><img src="./images/w4.png" alt="سوپر مارکت"><span class="w-text">سوپر مارکت</span></a>
+        <a href="#" class="wgt"><img src="./images/w5.png" alt="خرید برنده"><span class="w-text">خرید برنده</span></a>
+        <a href="#" class="wgt"><img src="./images/w6.png" alt="مسابقه عکاسی"><span class="w-text">مسابقه عکاسی</span></a>
+        <a href="#" class="wgt"><img src="./images/w7.png" alt="گیم نت"><span class="w-text">گیم نت</span></a>
+        <a href="#" class="wgt" id="more"><img src="./images/more.svg" alt="بیشتر"><span class="w-text">بیشتر</span></a>   
+    </div>
+    <div class="app-dl">
+        <span><img src=".\images\Logo.webp" alt="app"></span>
+        <span><p>دانلود اپلیکیشن دیجی کالا</p></span>
+        <span id="close">&times;</span>
+    </div>
+    <div class="nav">
+        <nav>
+            <a href="#" class="nav-link"><i class="material-icons nav-icon">home</i><span class="nav-text">خانه</span></a>
+            <a href="#" class="nav-link"><i class="material-icons nav-icon">dashboard</i><span class="nav-text">دسته بندی</span></a>
+            <a href="#" class="nav-link"><i class="material-icons nav-icon">shopping_cart</i><span class="nav-text">سبد خرید</span></a>
+            <a href="#" class="nav-link"><i class="material-icons nav-icon">person_outline</i><span class="nav-text">دیجی کالای من</span></a>
+        </nav>
+    </div>
+    <script src="logic.js"></script>
+</body>
+</html>
